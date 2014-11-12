@@ -1,7 +1,7 @@
 # Jai.vim
 
 <p align="center">
-  <img width="263" height="249" src="https://upx.cz/2gO"/>
+  <img width="526" height="499" src="https://upx.cz/2gO"/>
 </p>
 
 This project add syntax highlight for programming language Jai.
