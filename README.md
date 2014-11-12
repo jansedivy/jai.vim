@@ -16,6 +16,6 @@ So far it's included:
 
 ## Installation
 
-* copy to your `~/.vimrc`
+* copy to your `~/.vim folder`
 
 * if you use pathogen copy this project to `~/.vim/bundle`
