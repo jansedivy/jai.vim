@@ -6,7 +6,7 @@
 
 This project add syntax highlight for programming language Jai.
 
-Jai is still early in development, so it's possible that this plugin doesn't have all the Jai syntax.
+Jai is still early in development, so it's possible that this plugin doesn't have every syntax highlighting.
 
 So far it's included:
 
