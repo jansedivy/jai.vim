@@ -4,6 +4,7 @@ endif
 
 syntax keyword jaiUsing using
 syntax keyword jaiNew new
+syntax keyword jaiDelete delete
 
 syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
@@ -34,8 +35,9 @@ syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockCommen
 
 highlight link jaiUsing Keyword
 highlight link jaiNew Keyword
+highlight link jaiDelete Keyword
 highlight link jaiReturn Keyword
-highlight link jaiDefer Keyword
+highlight link jaiDefer Operator
 
 highlight link jaiString String
 highlight link jaiNumber Number
