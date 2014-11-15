@@ -15,6 +15,7 @@ syntax keyword jaiDataType void string int float float32 float64 u8 u16 u32 u64 
 syntax keyword jaiBool true false
 
 syntax keyword jaiReturn return
+syntax keyword jaiDefer defer
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
@@ -34,6 +35,8 @@ syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockCommen
 highlight link jaiUsing Keyword
 highlight link jaiNew Keyword
 highlight link jaiReturn Keyword
+highlight link jaiDefer Keyword
+
 highlight link jaiString String
 highlight link jaiNumber Number
 
