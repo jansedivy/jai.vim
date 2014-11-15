@@ -19,6 +19,7 @@ syntax keyword jaiReturn return
 syntax keyword jaiDefer defer
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
+syntax region jaiChar start=/'/ end=/./
 
 syntax match jaiNumber "\v\d+(\.\d+)?"
 
@@ -40,6 +41,7 @@ highlight link jaiReturn Keyword
 highlight link jaiDefer Operator
 
 highlight link jaiString String
+highlight link jaiChar String
 highlight link jaiNumber Number
 
 highlight link jaiStruct Structure
