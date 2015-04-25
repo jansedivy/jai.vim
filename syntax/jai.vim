@@ -5,6 +5,7 @@ endif
 syntax keyword jaiUsing using
 syntax keyword jaiNew new
 syntax keyword jaiDelete delete
+syntax keyword jaiCast cast
 
 syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
@@ -26,16 +27,19 @@ syntax match jaiNumber "\v\d+(\.\d+)?"
 syntax match jaiFunction "\v<\w*>(\s*::\s*)@="
 syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
 
+syntax match jaiTagNote "\v\@\S+"
+
 syntax match jaiClass "\v<[A-Z]\w+>"
 syntax match jaiConstant "\v<[A-Z,_]+>"
 
 syntax match jaiMacro "\v#\w*"
 
 syntax match jaiLineComment "\v//.*"
-syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockComment 
+syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockComment
 
 highlight link jaiUsing Keyword
 highlight link jaiNew Keyword
+highlight link jaiCast Keyword
 highlight link jaiDelete Keyword
 highlight link jaiReturn Keyword
 highlight link jaiDefer Operator
@@ -59,6 +63,7 @@ highlight link jaiBlockComment Comment
 
 highlight link jaiClass Type
 
+highlight link jaiTagNote Keyword
 highlight link jaiNumber Number
 highlight link jaiDataType Type
 highlight link jaiBool Boolean
