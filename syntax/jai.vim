@@ -51,7 +51,6 @@ highlight link jaiDefer Operator
 highlight link jaiQuestionMark Operator
 
 highlight link jaiString String
-highlight link jaiNumber Number
 
 highlight link jaiStruct Structure
 highlight link jaiEnum Structure
