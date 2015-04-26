@@ -20,6 +20,8 @@ syntax keyword jaiBool true false
 syntax keyword jaiReturn return
 syntax keyword jaiDefer defer
 
+syntax match jaiQuestionMark "?"
+
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 syntax match jaiNumber "\v\d+(\.\d+)?"
@@ -43,6 +45,8 @@ highlight link jaiCast Keyword
 highlight link jaiDelete Keyword
 highlight link jaiReturn Keyword
 highlight link jaiDefer Operator
+
+highlight link jaiQuestionMark Operator
 
 highlight link jaiString String
 highlight link jaiNumber Number
