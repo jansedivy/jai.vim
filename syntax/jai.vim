@@ -6,6 +6,7 @@ syntax keyword jaiUsing using
 syntax keyword jaiNew new
 syntax keyword jaiDelete delete
 syntax keyword jaiCast cast
+syntax keyword jaiAutoCast xx
 
 syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
@@ -42,6 +43,7 @@ syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockCommen
 highlight link jaiUsing Keyword
 highlight link jaiNew Keyword
 highlight link jaiCast Keyword
+highlight link jaiAutoCast Keyword
 highlight link jaiDelete Keyword
 highlight link jaiReturn Keyword
 highlight link jaiDefer Operator
