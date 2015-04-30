@@ -8,6 +8,25 @@ Syntax highlighting for [Jonathan Blow's](https://twitter.com/jonathan_blow) pro
 
 ## Installation
 
-* copy to your `~/.vim folder`
+If you use pathogen clone this plugin to `~/.vim/bundle`
 
-* if you use pathogen copy this project to `~/.vim/bundle`
+```bash
+git clone https://github.com/jansedivy/jai.vim.git ~/.vim/bundle
+```
+
+In general, for other plugin managers you have to add configuration line in `~/.vimrc`.
+
+```viml
+" vim-plug
+Plug 'jansedivy/jai.vim'
+
+" NeoBundle
+NeoBundle 'jansedivy/jai.vim'
+
+" Vundle
+Plugin 'jansedivy/jai.vim'
+```
+
+### Manual installation
+
+* copy files to your `~/.vim` folder
