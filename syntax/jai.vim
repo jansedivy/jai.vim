@@ -31,12 +31,12 @@ syntax match jaiFloat "\<\d\+\.\d*\>"
 syntax match jaiFunction "\v<\w*>(\s*::\s*)@="
 syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
 
-syntax match jaiTagNote "\v\@\S+"
+syntax match jaiTagNote "@\<\w\+\>"
 
 syntax match jaiClass "\v<[A-Z]\w+>"
 syntax match jaiConstant "\v<[A-Z,_]+>"
 
-syntax match jaiMacro "\v#\w*"
+syntax match jaiMacro "#\<\w\+\>"
 
 syntax match jaiLineComment "\v//.*"
 syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockComment
@@ -69,7 +69,7 @@ highlight link jaiBlockComment Comment
 
 highlight link jaiClass Type
 
-highlight link jaiTagNote Keyword
+highlight link jaiTagNote Identifier
 highlight link jaiInteger Number
 highlight link jaiFloat Number
 highlight link jaiDataType Type
