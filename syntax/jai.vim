@@ -27,7 +27,7 @@ syntax match jaiQuestionMark "?"
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
-syntax match jaiNumber "\v\d+(\.\d+)?"
+syn match jaiInteger "\<\d\+\>"
 
 syntax match jaiFunction "\v<\w*>(\s*::\s*)@="
 syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
@@ -71,7 +71,7 @@ highlight link jaiBlockComment Comment
 highlight link jaiClass Type
 
 highlight link jaiTagNote Keyword
-highlight link jaiNumber Number
+highlight link jaiInteger Number
 highlight link jaiDataType Type
 highlight link jaiBool Boolean
 highlight link jaiConstant Constant
