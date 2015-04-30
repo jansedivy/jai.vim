@@ -1,6 +1,6 @@
 # Jai.vim
 
-Syntax highlighting for Jai programming language by [Jonathan Blow](https://twitter.com/jonathan_blow)
+Syntax highlighting for [Jonathan Blow's](https://twitter.com/jonathan_blow) programming language **Jai**
 
 <p align="center">
   <img width="700" height="393" src="https://upx.cz/2gE"/>
