@@ -41,7 +41,7 @@ syntax match jaiConstant "\v<[A-Z,_]+>"
 
 syntax match jaiMacro "#\<\w\+\>"
 
-syntax match jaiLineComment "\v//.*"
+syntax match jaiLineComment "//.*"
 syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockComment
 
 highlight link jaiIt Keyword
