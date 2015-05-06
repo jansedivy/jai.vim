@@ -21,6 +21,8 @@ syntax keyword jaiBool true false
 syntax keyword jaiReturn return
 syntax keyword jaiDefer defer
 
+syntax keyword jaiIt it
+
 syntax match jaiQuestionMark "?"
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
@@ -41,6 +43,7 @@ syntax match jaiMacro "#\<\w\+\>"
 syntax match jaiLineComment "\v//.*"
 syntax region jaiBlockComment start=/\v\/\*/ end=/\\*\// contains=jaiBlockComment
 
+highlight link jaiIt Keyword
 highlight link jaiUsing Keyword
 highlight link jaiNew Keyword
 highlight link jaiCast Keyword
