@@ -29,7 +29,7 @@ syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 syntax match jaiInteger "\<\d\+\>"
 syntax match jaiFloat "\<\d\+\.\d*\>"
-syntax match jaiHex "\<0[xX][0-9A-Fa-f]\+\>"
+syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>"
 
 syntax match jaiFunction "\v<\w*>(\s*::\s*)@="
 syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
