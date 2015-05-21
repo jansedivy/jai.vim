@@ -38,7 +38,7 @@ syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
 syntax match jaiTagNote "@\<\w\+\>"
 
 syntax match jaiClass "\v<[A-Z]\w+>"
-syntax match jaiConstant "\v<[A-Z,_]+>"
+syntax match jaiConstant "\v<[A-Z0-9,_]+>"
 
 syntax match jaiMacro "#\<\w\+\>"
 
