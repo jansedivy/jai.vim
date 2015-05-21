@@ -15,7 +15,7 @@ syntax keyword jaiIf if
 syntax keyword jaiFor for
 syntax keyword jaiWhile while
 
-syntax keyword jaiDataType void string int float float32 float64 u8 u16 u32 u64 s8 s16 s32 s64
+syntax keyword jaiDataType void string int float float32 float64 u8 u16 u32 u64 s8 s16 s32 s64 bool
 syntax keyword jaiBool true false
 
 syntax keyword jaiReturn return
