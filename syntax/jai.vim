@@ -43,6 +43,8 @@ syntax match jaiConstant "\v<[A-Z0-9,_]+>"
 
 syntax match jaiMacro "#\<\w\+\>"
 
+syntax match jaiTemplate "$\<\w\+\>"
+
 syntax match jaiLineComment "//.*"
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment
 
@@ -75,6 +77,8 @@ highlight link jaiLineComment Comment
 highlight link jaiBlockComment Comment
 
 highlight link jaiClass Type
+
+highlight link jaiTemplate Constant
 
 highlight link jaiTagNote Identifier
 highlight link jaiInteger Number
