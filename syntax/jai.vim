@@ -6,7 +6,6 @@ syntax keyword jaiUsing using
 syntax keyword jaiNew new
 syntax keyword jaiDelete delete
 syntax keyword jaiCast cast
-syntax keyword jaiAutoCast xx
 
 syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
@@ -28,6 +27,8 @@ syntax keyword jaiIt it
 syntax match jaiQuestionMark "?"
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
+
+syntax match jaiAutoCast "<<"
 
 syntax match jaiInteger "\<\d\+\>"
 syntax match jaiFloat "\<\d\+\.\d*\>"
