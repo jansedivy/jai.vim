@@ -46,8 +46,9 @@ syntax match jaiMacro "#\<\w\+\>"
 
 syntax match jaiTemplate "$\<\w\+\>"
 
-syntax match jaiLineComment "//.*"
-syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment
+syntax match jaiCommentNote  "\s@\<\w\+\>"
+syntax match jaiLineComment "//.*" contains=jaiCommentNote
+syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
 
 highlight link jaiIt Keyword
 highlight link jaiUsing Keyword
@@ -76,6 +77,7 @@ highlight link jaiWhile Repeat
 
 highlight link jaiLineComment Comment
 highlight link jaiBlockComment Comment
+highlight link jaiCommentNote Todo
 
 highlight link jaiClass Type
 
