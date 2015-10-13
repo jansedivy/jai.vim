@@ -11,6 +11,7 @@ syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
 
 syntax keyword jaiIf if
+syntax keyword jaiThen then
 syntax keyword jaiElse else
 syntax keyword jaiFor for
 syntax keyword jaiWhile while
@@ -71,6 +72,7 @@ highlight link jaiDynamicFunction Function
 
 highlight link jaiMacro Macro
 highlight link jaiIf Conditional
+highlight link jaiThen Conditional
 highlight link jaiElse Conditional
 highlight link jaiFor Repeat
 highlight link jaiWhile Repeat
