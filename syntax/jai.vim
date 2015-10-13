@@ -28,7 +28,7 @@ syntax match jaiQuestionMark "?"
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
-syntax match jaiAutoCast "<<"
+syntax match jaiAutoCast "xx"
 
 syntax match jaiInteger "\<\d\+\>"
 syntax match jaiFloat "\<\d\+\.\d*\>"
