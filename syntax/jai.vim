@@ -31,10 +31,6 @@ syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 syntax match jaiAutoCast "xx"
 
-syntax match jaiInteger "\<\d\+\>"
-syntax match jaiFloat "\<\d\+\.\d*\>"
-syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>"
-
 syntax match jaiFunction "\v<\w*>(\s*::\s*)@="
 syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
 
@@ -42,6 +38,10 @@ syntax match jaiTagNote "@\<\w\+\>"
 
 syntax match jaiClass "\v<[A-Z]\w+>"
 syntax match jaiConstant "\v<[A-Z0-9,_]+>"
+
+syntax match jaiInteger "\<\d\+\>"
+syntax match jaiFloat "\<\d\+\.\d*\>"
+syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>"
 
 syntax match jaiMacro "#\<\w\+\>"
 
@@ -86,12 +86,12 @@ highlight link jaiClass Type
 highlight link jaiTemplate Constant
 
 highlight link jaiTagNote Identifier
-highlight link jaiInteger Number
-highlight link jaiFloat Number
-highlight link jaiHex Number
 highlight link jaiDataType Type
 highlight link jaiBool Boolean
 highlight link jaiConstant Constant
 highlight link jaiNull Type
+highlight link jaiInteger Number
+highlight link jaiFloat Float
+highlight link jaiHex Number
 
 let b:current_syntax = "jai"
