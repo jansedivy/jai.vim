@@ -23,6 +23,9 @@ syntax keyword jaiNull null
 syntax keyword jaiReturn return
 syntax keyword jaiDefer defer
 
+syntax keyword jaiSOA SOA
+syntax keyword jaiAOS AOS
+
 syntax keyword jaiIt it
 
 syntax match jaiQuestionMark "?"
@@ -93,5 +96,8 @@ highlight link jaiNull Type
 highlight link jaiInteger Number
 highlight link jaiFloat Float
 highlight link jaiHex Number
+
+highlight link jaiSOA Keyword
+highlight link jaiAOS Keyword
 
 let b:current_syntax = "jai"
