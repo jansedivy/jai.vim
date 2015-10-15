@@ -43,7 +43,7 @@ syntax match jaiClass "\v<[A-Z]\w+>"
 syntax match jaiConstant "\v<[A-Z0-9,_]+>"
 
 syntax match jaiInteger "\<\d\+\>"
-syntax match jaiFloat "\<\d\+\.\d*\>"
+syntax match jaiFloat "\<[0-9][0-9_]*\%(\.[0-9][0-9_]*\)\%([eE][+-]\=[0-9_]\+\)\="
 syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>"
 
 syntax match jaiMacro "#\<\w\+\>"
