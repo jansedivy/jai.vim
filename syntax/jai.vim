@@ -23,6 +23,9 @@ syntax keyword jaiNull null
 syntax keyword jaiReturn return
 syntax keyword jaiDefer defer
 
+syntax keyword jaiInline inline
+syntax keyword jaiNoInline no_inline
+
 syntax keyword jaiSOA SOA
 syntax keyword jaiAOS AOS
 
@@ -62,6 +65,9 @@ highlight link jaiAutoCast Keyword
 highlight link jaiDelete Keyword
 highlight link jaiReturn Keyword
 highlight link jaiDefer Operator
+
+highlight link jaiInline Keyword
+highlight link jaiNoInline Keyword
 
 highlight link jaiQuestionMark Operator
 
