@@ -53,7 +53,7 @@ syntax match jaiMacro "#\<\w\+\>"
 
 syntax match jaiTemplate "$\<\w\+\>"
 
-syntax match jaiCommentNote  "\s@\<\w\+\>"
+syntax match jaiCommentNote "\s@\<\w\+\>" contained
 syntax match jaiLineComment "//.*" contains=jaiCommentNote
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
 
