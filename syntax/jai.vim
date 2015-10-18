@@ -31,8 +31,6 @@ syntax keyword jaiAOS AOS
 
 syntax keyword jaiIt it
 
-syntax match jaiQuestionMark "?"
-
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 syntax match jaiAutoCast "xx"
@@ -68,8 +66,6 @@ highlight link jaiDefer Operator
 
 highlight link jaiInline Keyword
 highlight link jaiNoInline Keyword
-
-highlight link jaiQuestionMark Operator
 
 highlight link jaiString String
 
