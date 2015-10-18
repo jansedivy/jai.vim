@@ -38,20 +38,20 @@ syntax keyword jaiAutoCast xx
 syntax match jaiFunction "\v<\w*>(\s*::\s*)@="
 syntax match jaiDynamicFunction "\v<\w*(\s*:\=\s*\(.*\))@="
 
-syntax match jaiTagNote "@\<\w\+\>"
+syntax match jaiTagNote "@\<\w\+\>" display
 
-syntax match jaiClass "\v<[A-Z]\w+>"
-syntax match jaiConstant "\v<[A-Z0-9,_]+>"
+syntax match jaiClass "\v<[A-Z]\w+>" display
+syntax match jaiConstant "\v<[A-Z0-9,_]+>" display
 
-syntax match jaiInteger "\<\d\+\>"
-syntax match jaiFloat "\<[0-9][0-9_]*\%(\.[0-9][0-9_]*\)\%([eE][+-]\=[0-9_]\+\)\="
-syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>"
+syntax match jaiInteger "\<\d\+\>" display
+syntax match jaiFloat "\<[0-9][0-9_]*\%(\.[0-9][0-9_]*\)\%([eE][+-]\=[0-9_]\+\)\=" display
+syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>" display
 
-syntax match jaiMacro "#\<\w\+\>"
+syntax match jaiMacro "#\<\w\+\>" display
 
 syntax match jaiTemplate "$\<\w\+\>"
 
-syntax match jaiCommentNote "\s@\<\w\+\>" contained
+syntax match jaiCommentNote "@\<\w\+\>" contained display
 syntax match jaiLineComment "//.*" contains=jaiCommentNote
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
 
