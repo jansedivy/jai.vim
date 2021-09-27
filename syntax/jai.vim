@@ -55,51 +55,51 @@ syntax match jaiCommentNote "@\<\w\+\>" contained display
 syntax match jaiLineComment "//.*" contains=jaiCommentNote
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
 
-highlight link jaiIt Keyword
-highlight link jaiUsing Keyword
-highlight link jaiNew Keyword
-highlight link jaiCast Keyword
-highlight link jaiAutoCast Keyword
-highlight link jaiDelete Keyword
-highlight link jaiReturn Keyword
-highlight link jaiDefer Operator
+highlight def link jaiIt Keyword
+highlight def link jaiUsing Keyword
+highlight def link jaiNew Keyword
+highlight def link jaiCast Keyword
+highlight def link jaiAutoCast Keyword
+highlight def link jaiDelete Keyword
+highlight def link jaiReturn Keyword
+highlight def link jaiDefer Operator
 
-highlight link jaiInline Keyword
-highlight link jaiNoInline Keyword
+highlight def link jaiInline Keyword
+highlight def link jaiNoInline Keyword
 
-highlight link jaiString String
+highlight def link jaiString String
 
-highlight link jaiStruct Structure
-highlight link jaiEnum Structure
+highlight def link jaiStruct Structure
+highlight def link jaiEnum Structure
 
-highlight link jaiFunction Function
-highlight link jaiDynamicFunction Function
+highlight def link jaiFunction Function
+highlight def link jaiDynamicFunction Function
 
-highlight link jaiMacro Macro
-highlight link jaiIf Conditional
-highlight link jaiThen Conditional
-highlight link jaiElse Conditional
-highlight link jaiFor Repeat
-highlight link jaiWhile Repeat
+highlight def link jaiMacro Macro
+highlight def link jaiIf Conditional
+highlight def link jaiThen Conditional
+highlight def link jaiElse Conditional
+highlight def link jaiFor Repeat
+highlight def link jaiWhile Repeat
 
-highlight link jaiLineComment Comment
-highlight link jaiBlockComment Comment
-highlight link jaiCommentNote Todo
+highlight def link jaiLineComment Comment
+highlight def link jaiBlockComment Comment
+highlight def link jaiCommentNote Todo
 
-highlight link jaiClass Type
+highlight def link jaiClass Type
 
-highlight link jaiTemplate Constant
+highlight def link jaiTemplate Constant
 
-highlight link jaiTagNote Identifier
-highlight link jaiDataType Type
-highlight link jaiBool Boolean
-highlight link jaiConstant Constant
-highlight link jaiNull Type
-highlight link jaiInteger Number
-highlight link jaiFloat Float
-highlight link jaiHex Number
+highlight def link jaiTagNote Identifier
+highlight def link jaiDataType Type
+highlight def link jaiBool Boolean
+highlight def link jaiConstant Constant
+highlight def link jaiNull Type
+highlight def link jaiInteger Number
+highlight def link jaiFloat Float
+highlight def link jaiHex Number
 
-highlight link jaiSOA Keyword
-highlight link jaiAOS Keyword
+highlight def link jaiSOA Keyword
+highlight def link jaiAOS Keyword
 
 let b:current_syntax = "jai"
