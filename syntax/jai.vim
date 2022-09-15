@@ -16,6 +16,9 @@ syntax keyword jaiElse else
 syntax keyword jaiFor for
 syntax keyword jaiWhile while
 
+syntax keyword jaiBreak break
+syntax keyword jaiContinue continue
+
 syntax keyword jaiDataType void string int float float32 float64 u8 u16 u32 u64 s8 s16 s32 s64 bool
 syntax keyword jaiBool true false
 syntax keyword jaiNull null
@@ -66,6 +69,9 @@ highlight def link jaiDefer Operator
 
 highlight def link jaiInline Keyword
 highlight def link jaiNoInline Keyword
+
+highlight def link jaiBreak Keyword
+highlight def link jaiContinue Keyword
 
 highlight def link jaiString String
 
