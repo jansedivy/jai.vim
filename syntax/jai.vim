@@ -11,9 +11,12 @@ syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
 
 syntax keyword jaiIf if
+syntax keyword jaiIfx ifx
 syntax keyword jaiThen then
+syntax keyword jaiCase case
 syntax keyword jaiElse else
 syntax keyword jaiFor for
+syntax keyword jaiRemove remove
 syntax keyword jaiWhile while
 
 syntax keyword jaiBreak break
@@ -51,12 +54,18 @@ syntax match jaiFloat "\<[0-9][0-9_]*\%(\.[0-9][0-9_]*\)\%([eE][+-]\=[0-9_]\+\)\
 syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>" display
 
 syntax match jaiMacro "#\<\w\+\>" display
+syntax match jaiParentScope "`"
 
 syntax match jaiTemplate "$\<\w\+\>"
 
 syntax match jaiCommentNote "@\<\w\+\>" contained display
 syntax match jaiLineComment "//.*" contains=jaiCommentNote
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
+
+
+" I can't get this to work...
+"syntax match jaiHashtagString display /#string/ contained
+syntax region jaiMultilineString start=/#string \z(\<\w\+\>\)/hs=e+1 end=/\z1/he=s-1
 
 highlight def link jaiIt Keyword
 highlight def link jaiUsing Keyword
@@ -74,6 +83,8 @@ highlight def link jaiBreak Keyword
 highlight def link jaiContinue Keyword
 
 highlight def link jaiString String
+highlight def link jaiHashtagString Keyword
+highlight def link jaiMultilineString String
 
 highlight def link jaiStruct Structure
 highlight def link jaiEnum Structure
@@ -82,10 +93,14 @@ highlight def link jaiFunction Function
 highlight def link jaiDynamicFunction Function
 
 highlight def link jaiMacro Macro
+highlight def link jaiParentScope Number
 highlight def link jaiIf Conditional
+highlight def link jaiIfx Conditional
 highlight def link jaiThen Conditional
+highlight def link jaiCase Conditional
 highlight def link jaiElse Conditional
 highlight def link jaiFor Repeat
+highlight def link jaiRemove Repeat
 highlight def link jaiWhile Repeat
 
 highlight def link jaiLineComment Comment
