@@ -35,7 +35,7 @@ syntax keyword jaiNoInline no_inline
 syntax keyword jaiSOA SOA
 syntax keyword jaiAOS AOS
 
-syntax keyword jaiIt it
+syntax keyword jaiIt it it_index
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
@@ -57,10 +57,13 @@ syntax match jaiMacro "#\<\w\+\>" display
 syntax match jaiParentScope "`"
 
 syntax match jaiTemplate "$\<\w\+\>"
+syntax match jaiOptionalBake "$$\<\w\+\>"
 
 syntax match jaiCommentNote "@\<\w\+\>" contained display
 syntax match jaiLineComment "//.*" contains=jaiCommentNote
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
+
+syntax keyword jaiBuiltins is_constant type_of type_info
 
 
 " I can't get this to work...
@@ -83,7 +86,7 @@ highlight def link jaiBreak Keyword
 highlight def link jaiContinue Keyword
 
 highlight def link jaiString String
-highlight def link jaiHashtagString Keyword
+"highlight def link jaiHashtagString Keyword
 highlight def link jaiMultilineString String
 
 highlight def link jaiStruct Structure
@@ -110,6 +113,7 @@ highlight def link jaiCommentNote Todo
 highlight def link jaiClass Type
 
 highlight def link jaiTemplate Constant
+highlight def link jaiOptionalBake Special
 
 highlight def link jaiTagNote Identifier
 highlight def link jaiDataType Type
@@ -122,5 +126,7 @@ highlight def link jaiHex Number
 
 highlight def link jaiSOA Keyword
 highlight def link jaiAOS Keyword
+
+highlight def link jaiBuiltins Keyword
 
 let b:current_syntax = "jai"
