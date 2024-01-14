@@ -109,3 +109,4 @@ highlight def link jaiSOA Keyword
 highlight def link jaiAOS Keyword
 
 let b:current_syntax = "jai"
+syntax sync fromstart
