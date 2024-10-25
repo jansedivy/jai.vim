@@ -11,6 +11,7 @@ syntax keyword jaiStruct struct
 syntax keyword jaiEnum enum
 
 syntax keyword jaiIf if
+syntax keyword jaiIfx ifx
 syntax keyword jaiThen then
 syntax keyword jaiElse else
 syntax keyword jaiFor for
@@ -33,6 +34,7 @@ syntax keyword jaiSOA SOA
 syntax keyword jaiAOS AOS
 
 syntax keyword jaiIt it
+syntax keyword jaiItIndex it_index
 
 syntax region jaiString start=/\v"/ skip=/\v\\./ end=/\v"/
 
@@ -50,7 +52,7 @@ syntax match jaiInteger "\<\d\+\>" display
 syntax match jaiFloat "\<[0-9][0-9_]*\%(\.[0-9][0-9_]*\)\%([eE][+-]\=[0-9_]\+\)\=" display
 syntax match jaiHex "\<0x[0-9A-Fa-f]\+\>" display
 
-syntax match jaiMacro "#\<\w\+\>" display
+syntax match jaiMacro "#\<\w\+\(,\S*\)\?" display
 
 syntax match jaiTemplate "$\<\w\+\>"
 
@@ -59,6 +61,7 @@ syntax match jaiLineComment "//.*" contains=jaiCommentNote
 syntax region jaiBlockComment start=/\v\/\*/ end=/\v\*\// contains=jaiBlockComment, jaiCommentNote
 
 highlight def link jaiIt Keyword
+highlight def link jaiItIndex Keyword
 highlight def link jaiUsing Keyword
 highlight def link jaiNew Keyword
 highlight def link jaiCast Keyword
@@ -83,6 +86,7 @@ highlight def link jaiDynamicFunction Function
 
 highlight def link jaiMacro Macro
 highlight def link jaiIf Conditional
+highlight def link jaiIfx Conditional
 highlight def link jaiThen Conditional
 highlight def link jaiElse Conditional
 highlight def link jaiFor Repeat
